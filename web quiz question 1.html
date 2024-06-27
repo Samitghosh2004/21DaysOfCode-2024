@@ -1,0 +1,129 @@
+!DOCTYPE html
+html lang=en
+
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleSticky Navigation Bartitle
+    style
+body {
+font-family Arial, sans-serif;
+margin 0;
+padding 0;
+height 5000px;
+  To enable scrolling 
+  background-colorrgb(75,475,34)
+}
+
+header {
+ position -webkit-sticky;
+  For Safari 
+position sticky;
+top 0;
+ background-colorrgb(25,25,57);
+z-index 1000;
+ width 100%;
+}
+.nav-container {
+display flex;
+justify-content space-between;
+align-items center;
+ padding 25px 25px;
+}
+.logo {
+color ;
+text-decoration none;
+font-size 24px;
+}
+.nav-links {
+list-style none;
+ margin 20;
+padding 10;
+ display flex;
+}
+.nav-links li {
+margin-left 20px;
+}
+.nav-links a {
+color #fff;
+ text-decoration none;
+padding 15px 26px;
+}
+.hamburger-menu {
+display none;
+cursor pointer;
+}
+.hamburger-menu svg {
+fill #fff;
+}
+ @media (max-width 1768px) {
+ .nav-links {
+display none;
+ flex-direction column;
+ width 300%;
+position absolute;
+ top 60px;
+ left 0;
+ background-color rgb(10,57,25);
+}
+.nav-links li {
+ margin 0;
+}
+.nav-links a {
+display block;
+width 100%;
+text-align center;
+}
+.hamburger-menu {
+ display block;
+ }
+        }
+    style
+head
+
+body
+header
+nav id=navbar
+div class=nav-container
+a href=# class=logoLogoa
+ul class=nav-links
+lia href=#section1Section 1ali
+lia href=#section2Section 2ali
+lia href=#section3Section 3ali
+lia href=#section4Section 4ali
+ul
+ div class=hamburger-menu onclick=toggleMenu()
+svg width=24 height=24 viewBox=0 0 24 24
+ path d=M3 6h18M3 12h18M3 18h18 
+svg
+div
+div
+nav
+header
+main
+section id=section1
+ h2Section 1h2
+pContent for section 1.p
+section
+section id=section2
+h2Section 2h2
+pContent for section 2.p
+section
+ section id=section3
+ h2Section 3h2
+ pContent for section 3.p
+section
+ section id=section4
+h2Section 4h2
+ pContent for section 4.p
+ section
+main
+script
+function toggleMenu() {
+const navLinks = document.querySelector('.nav-links');
+navLinks.style.display = navLinks.style.display === 'flex'  'none'  'flex';
+}
+script
+body
+
+html
